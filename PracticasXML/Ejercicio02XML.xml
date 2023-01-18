@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<tabla>
+    <ciclo>DAM</ciclo>
+    <curso>Primero</curso>
+    <aula>Taller de Administración</aula>
+    <modulos>
+        <modulo nombre="LM">
+            <horas>
+                <hora dia="lunes">12:30</hora>
+                <hora dia="miercoles">10:00</hora>
+                <hora dia="miercoles">11:30</hora>
+            </horas>     
+        </modulo>
+        <modulo nombre="PG">
+            <horas>
+                <hora dia="lunes">10:00</hora>
+                <hora dia="miercoles">8:00</hora>
+                <hora dia="miercoles">9:00</hora>
+                <hora dia="jueves">8:00</hora>
+                <hora dia="jueves">9:00</hora>
+                <hora dia="jueves">10:00</hora>
+                <hora dia="viernes">8:00</hora>
+                <hora dia="viernes">9:00</hora>
+            </horas>     
+        </modulo>
+        <modulo nombre="FOL">
+            <horas>
+                <hora dia="lunes">11:30</hora>
+                <hora dia="martes">9:00</hora>
+                <hora dia="martes">10:00</hora>
+            </horas>     
+        </modulo>
+        <modulo nombre="ENT">
+            <horas>
+                <hora dia="lunes">13:30</hora>
+                <hora dia="jueves">12:30</hora>
+                <hora dia="jueves">13:30</hora>
+            </horas>     
+        </modulo>
+        <modulo nombre="BD">
+            <horas>
+                <hora dia="lunes">8:00</hora>
+                <hora dia="martes">8:00</hora>
+                <hora dia="jueves">11:30</hora>
+                <hora dia="viernes">11:30</hora>
+                <hora dia="viernes">12:30</hora>
+                <hora dia="viernes">13:30</hora>
+            </horas>     
+        </modulo>
+        <modulo nombre="SI">
+            <horas>
+                <hora dia="lunes">9:00</hora>
+                <hora dia="martes">11:30</hora>
+                <hora dia="martes">12:30</hora>
+                <hora dia="martes">13:30</hora>
+                <hora dia="miercoles">12:30</hora>
+                <hora dia="miercoles">13:30</hora>
+            </horas>     
+        </modulo>
+    </modulos>
+</tabla>
+
