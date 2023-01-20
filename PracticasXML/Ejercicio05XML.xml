@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<taquilla lugar="España" fecha="25-27/12">
+    <pelicula>
+        <posicion>1</posicion>
+        <titulo>Trolls 2:Gira Mundial</titulo>
+        <genero>Animación</genero>
+        <semanas>10</semanas>
+        <recaudacion>
+            <finsemana>34.000€</finsemana>
+            <total>2.492.000€</total>
+        </recaudacion>
+    </pelicula>
+    <pelicula>
+        <posicion>2</posicion>
+        <titulo>Otra vuelta de tuerca</titulo>
+        <genero>Terror</genero>
+        <semanas>6</semanas>
+        <recaudacion>
+            <finsemana>22.000€</finsemana>
+            <total>184.000€</total>
+        </recaudacion>
+    </pelicula>
+</taquilla>
+
