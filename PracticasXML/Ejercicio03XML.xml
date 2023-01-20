@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<trabajo>
+    <datos>
+        <curso ciclo="DAM">Segundo</curso>
+        <nombre>Gerardo</nombre>
+        <apellidos>Marín Jaime</apellidos>
+    </datos>
+    <proyecto>
+        <titulo>FacePI</titulo>
+        <introduccion>FacePI es un proyecto basado en Raspberry PI utilizando su capacidad de computación, moludaridad y compatibilidad de software.</introduccion>
+        <finalidad>Crea un dispositivo de reconocer rostros.</finalidad>
+        <objetivos>
+            <objetivo>Adquisición del hardware.</objetivo>
+            <objetivo>Instalación del SO.</objetivo>
+            <objetivo>Puesta a punto de AWS Reckognition.</objetivo>
+            <objetivo>Instalación y vinculación del software</objetivo>
+            <objetivo>Programacion de Scripts.</objetivo>
+            <objetivo>Entrenamiento de la red neuronal</objetivo>
+            <objetivo>Testing</objetivo>
+            <objetivo>Conclusión del proyecto</objetivo>
+        </objetivos>
+        <medios>
+            <medio>Equipo de sobremesa con Windows 10.</medio>
+            <medio>Rapsberry PI 3B</medio>
+            <medio>Cámara</medio>
+        </medios>
+        <planificacion>El proyecto se realizará por sprints semanales.</planificacion>
+        <bibliografia></bibliografia>
+    </proyecto>
+</trabajo>
+
