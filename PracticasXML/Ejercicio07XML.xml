@@ -7,18 +7,61 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this 
 
 
 <biblioteca>
-    <libro>
-        <ubicacion>
-            <seccion></seccion>
-            <estanteria></estanteria>
-        </ubicacion>
-        <ejemplar estado="">
-            <fecha_prestamo></fecha_prestamo>
-            <fecha_devolucion></fecha_devolucion>
-        </ejemplar>
-    </libro>
-    <usuario>
+    <libros>
+        <libro idioma="" isbn="">
         
-    </usuario>
+            <titulo></titulo>
+            <autor></autor>
+            <autor></autor>
+            <edicion></edicion>
+            <año></año>
+            <editorial></editorial>
+            <resumen></resumen>
+        
+            <categorias>
+                <categoria></categoria>
+                <categoria></categoria>
+                ...
+            </categorias>
+        
+            <ubicacion>
+                <seccion></seccion>
+                <estanteria></estanteria>
+            </ubicacion>
+        
+            <ejemplares>
+                <ejemplar estado="" id="">
+                    <fecha></fecha>
+                    <prestamos>
+                        <prestamo id=""/>
+                        ...
+                    </prestamos>
+                </ejemplar>
+                ...
+            </ejemplares>
+        
+        </libro>
+        ...
+    </libros>
+    <usuarios>
+        
+        <usuario id="">
+            <nombre></nombre>
+            <apellidos></apellidos>
+            <nacimiento></nacimiento>
+            
+            <prestamos>
+                
+                <prestamo>
+                    <salida></salida>
+                    <entrada></entrada>
+                </prestamo>
+                ...
+            </prestamos>
+            
+        </usuario>
+        ...
+    </usuarios>
+    
 </biblioteca>
 
