@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+<root>
+    <solicitud user="5527472839" req="12345">
+        <region>Málaga</region>
+        <fecha>29/01/2023</fecha>
+    </solicitud>
+   
+    <respuesta req="12345">
+        <status>ok</status>
+        <prevision>nubes</prevision>
+        <descripcion>Intervaalos nubosos con bajo riesgo de lluviaa</descripcion>
+        <dia>domingo</dia>
+        <informacion>
+            <temperatura>12ºC</temperatura>
+            <presion>878</presion>
+        </informacion>
+    </respuesta>
+    
+    <!--En caso de solicitud incorrecta-->    
+    
+    <solicitud user="5527472839" req="12345">
+        <region>Málaga</region>
+        <fecha>29/01/2020</fecha>
+    </solicitud>
+    
+    <respuesta req="12345">
+        <status>error</status>
+        <mensaje>Fecha inválida</mensaje>
+    </respuesta>
+</root>
