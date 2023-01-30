@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nomina>
+    
+    <propietario>
+        <nombre>Luís Gutierrez Alonso</nombre>
+        <categoria>Ingeniero</categoria>
+        <grupo>1</grupo>
+    </propietario>
+    
+    <periodoLiquidacion>
+        <inicio>1 de marzo</inicio>
+        <fin>31 de marzo de 2011</fin>
+        <totalDias>30</totalDias>
+    </periodoLiquidacion>
+    
+    <conceptos>
+        
+        <liquido>
+            
+            <devengos>
+                
+                <salarial>
+                    
+                    <sal_base>1500</sal_base>
+                    
+                    <complementos>
+                        <complemento tipo="incentivo">192</complemento>
+                        <complemento tipo=""></complemento>
+                        ...
+                    </complementos>
+                    
+                    <horasExtra>
+                        <estructurales>60</estructurales>
+                        <fuerzamayor>100</fuerzamayor>
+                        <total>160</total>
+                    </horasExtra>
+                    
+                </salarial>
+                
+                <noSalarial></noSalarial>
+                
+                <totalDevengado>1852</totalDevengado>
+                
+            </devengos>
+            
+            <deducciones>
+                
+                <conceptos>
+                    
+                    <concepto tipo="Contingencias comunes">    
+                        <base>1942,00</base>
+                        <porcentaje>4,70%</porcentaje>
+                        <aportacion>91,27</aportacion>
+                    </concepto>
+                    
+                    <concepto tipo="Desempleo">   
+                        <base>2102,00</base>
+                        <porcentaje>1,55%</porcentaje>
+                        <aportacion>32,58</aportacion>
+                    </concepto>
+                    
+                    <concepto tipo="Formacion profesional">    
+                        <base>2102,00</base>
+                        <porcentaje>0,10%</porcentaje>
+                        <aportacion>2,10</aportacion>
+                    </concepto>
+                    
+                    <concepto tipo="Fuerza mayor">    
+                        <base>100</base>
+                        <porcentaje>2,00%</porcentaje>
+                        <aportacion>2,00</aportacion>
+                    </concepto>
+                    
+                    <concepto tipo="otras horas">    
+                        <base>60</base>
+                        <porcentaje>4,70%</porcentaje>
+                        <aportacion>2,82</aportacion>
+                    </concepto>
+                    ...
+                </conceptos>
+                
+                <deducciontotal>371,53</deducciontotal>
+                
+            </deducciones>
+            
+            <liquidoTotal fecha="1 de abril del 2011">1480,47</liquidoTotal>
+            
+        </liquido>
+        
+        <determinacionDeBases>
+            
+            <comunes>
+                <mensual>1692</mensual>
+                <prorrateo>250</prorrateo>
+                <total>1942</total>
+            </comunes>
+            
+            <profesionales>
+                <salarios>2102</salarios>
+                <it></it>
+                <total>2102</total>
+            </profesionales>
+            
+            <horasextra>160</horasextra>
+            
+            <irpf tipo="percepcion salarial">1852</irpf>
+            
+        </determinacionDeBases>
+           
+    </conceptos>
+    
+</nomina>
+
