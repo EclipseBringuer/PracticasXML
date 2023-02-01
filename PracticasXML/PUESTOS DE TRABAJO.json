@@ -1,0 +1,16 @@
+{
+    "categoria profesional":"Junior",
+    "empleado":{
+        "dni":"46156670V",
+        "nombre":"Gabriel",
+        "apellidos":"Rincón López",
+        "domicilio":"avd Simón Bolívar",
+        "código postal":"29011",
+        "ciudad":"Málaga",
+        "puesto":{
+            "código":"1234",
+            "descripción":"hace cosas",
+            "sueldo":45000
+        }
+    }
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<!DOCTYPE reserva[
+<!ELEMENT reserva (nombre, telefono, email, fecha, personas, presupuesto, comentarios) >
+<!ELEMENT nombre (#PCDATA) >
+<!ELEMENT telefono (#PCDATA) >
+<!ELEMENT email (#PCDATA) >
+<!ELEMENT fecha (#PCDATA) >
+<!ELEMENT personas (#PCDATA) >
+<!ELEMENT presupuesto (#PCDATA) >
+<!ELEMENT comentarios (#PCDATA) >
+]>
+
+
+<reserva>
+    <nombre>Gabriel</nombre>
+    <telefono>608001838</telefono>
+    <email>gabrielrl2004@gmail.com</email>
+    <fecha>15/11/2004</fecha>
+    <personas>4</personas>
+    <presupuesto>65</presupuesto>
+    <comentarios>Increible restaurante</comentarios>
+</reserva>
+
