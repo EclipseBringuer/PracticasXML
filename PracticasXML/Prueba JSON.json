@@ -1,0 +1,32 @@
+{
+    "informacion":{
+        "ciclo":"DAM",
+        "curso":1,
+        "tutor":"Jon"
+    },
+    "modulo":{
+        "nombre":"Lenguaje de marcas",
+        "profesor":"Francisco Romero",
+        "estadisticas":{
+            "aprobados":30,
+            "suspensos":0
+        }
+    },
+    "alumnos":[
+        {
+            "nombre":"Cayetano",
+            "nota_t1":8,
+            "nota_t2":9,
+            "nota_t3":7,
+            "notas":[8, 9, 7]
+        },
+        {
+            "nombre":"Samuel",
+            "notas":[8, 9, 10]
+        },
+        {
+            "nombre":"Miguel",
+            "notas":[9, 8, 10]
+        }
+    ]
+}
