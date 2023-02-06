@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<!DOCTYPE familia[
+<!ELEMENT familia (persona*) >
+
+<!ELEMENT persona (nombre,apellidos,email+,parentesco) >
+<!ATTLIST persona dni CDATA #IMPLIED >
+<!ATTLIST persona edad CDATA #IMPLIED>
+
+<!ELEMENT email (#PCDATA|EMPTY)* >
+<!ELEMENT apellidos (#PCDATA) >
+<!ELEMENT parentesco (#PCDATA) >
+<!ELEMENT nombre (#PCDATA) >
+
+]>
+
+
+<familia>
+    
+    <persona dni="46156670V" edad="18">
+        <nombre>Gabriel</nombre>
+        <apellidos>Rincón</apellidos> 
+        <email>gabrielrl@gmail.com</email>
+        <email></email>
+        <parentesco>yo</parentesco>
+    </persona>
+    
+</familia>
+

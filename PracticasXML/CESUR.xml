@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<!DOCTYPE cesur[
+<!ELEMENT cesur (alumnos, profesores) >
+
+<!ELEMENT alumnos (alumno+) >
+<!ELEMENT alumno (contacto, info) >
+
+<!ELEMENT contacto (nombre, apellidos, telefono*) >
+<!ELEMENT nombre (#PCDATA) >
+<!ELEMENT apellidos (#PCDATA) >
+<!ELEMENT telefono (#PCDATA) >
+
+<!ELEMENT info (matriculacion, modulo+) >
+<!ELEMENT matriculacion (#PCDATA) >
+<!ELEMENT ciclo (#PCDATA) >
+
+<!ELEMENT modulo (#PCDATA) >
+<!ATTLIST modulo ciclo CDATA #IMPLIED >
+
+<!ELEMENT profesores (profesor+) >
+<!ELEMENT profesor (contacto, modulo+) >
+]>
+
+
+<cesur>
+    
+    <alumnos>
+        
+        <alumno>
+            <contacto>
+                <nombre>Gabriel</nombre>
+                <apellidos>Rincón López</apellidos>
+                <telefono>608001838</telefono>
+            </contacto>
+            
+            <info>
+                <matriculacion>12/07/2022</matriculacion>
+                <modulo ciclo="DAM" >Sistemas</modulo>
+            </info>
+        </alumno>
+        
+    </alumnos>
+    
+    <profesores>
+        
+        <profesor>
+            <contacto>
+                <nombre>Jon</nombre>
+                <apellidos>Zamora Oyarzun</apellidos>
+                <telefono>756234189</telefono>
+            </contacto>
+            <modulo ciclo="DAM" >Sistemas</modulo>
+        </profesor>
+        
+    </profesores>
+     
+</cesur>
+
