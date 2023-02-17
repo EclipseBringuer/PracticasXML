@@ -34,12 +34,15 @@
                     p{
                     text-align:center;
                     }
+                    tr.top td{
+                    background-color:yellow;
+                    }
                 </Style>
             </head>
             <body>
                 <h1>Listado de Canciones</h1>
                 <h3>
-                    <xsl:value-of select="count(/songlist/song[artist='The Beatles'])"/>
+                    <xsl:value-of select="count(/songlist/song)"/>
                 </h3>
                 <table>
                     <tr>
@@ -52,23 +55,80 @@
                         <th>Racha</th>
                         <th>Posición</th>                      
                     </tr>
-                    <xsl:for-each select="/songlist/song">
-                        <xsl:if test="artist='The Beatles'">
-                    <tr>
-                        <td><xsl:value-of select="title"/></td>
-                        <td><xsl:value-of select="appears"/></td>
-                        <td><xsl:value-of select="artist"/></td>
-                        <td><xsl:value-of select="writers"/></td>
-                        <td><xsl:value-of select="producer"/></td>
-                        <td><xsl:value-of select="released"/></td>
-                        <td><xsl:value-of select="streak"/></td>
-                        <td><xsl:value-of select="position"/></td>
-                    </tr>
-                        </xsl:if>
-                    </xsl:for-each>
+                    
+                    <xsl:apply-templates select="/songlist/song[artist='The Beatles']"/>
+                    <xsl:apply-templates select="/songlist/cancion[artist='The Beatles']"/>
+                     
                 </table>
+                <p>Created with love</p>
             </body>
         </html>
     </xsl:template>
+    
+    
+    
+    <xsl:template match="song">
+        <tr>
+            <xsl:if test="(position='No. 1' or position=' No. 1')">
+                <xsl:attribute name="class">top</xsl:attribute>
+            </xsl:if>
+            <td>
+                <xsl:value-of select="title"/>
+            </td>
+            <td>
+                <xsl:value-of select="appears"/>
+            </td>
+            <td>
+                <xsl:value-of select="artist"/>
+            </td>
+            <td>
+                <xsl:value-of select="writers"/>
+            </td>
+            <td>
+                <xsl:value-of select="producer"/>
+            </td>
+            <td>
+                <xsl:value-of select="released"/>
+            </td>
+            <td>
+                <xsl:value-of select="streak"/>
+            </td>
+            <td>
+                <xsl:value-of select="position"/>
+            </td>
+        </tr>
+    </xsl:template>
 
+<xsl:template match="cancion">
+        <tr style="background-color:pink">
+            <xsl:if test="(position='No. 1' or position=' No. 1')">
+                <xsl:attribute name="class">top</xsl:attribute>
+            </xsl:if>
+            <td>
+                <xsl:value-of select="title"/>
+            </td>
+            <td>
+                <xsl:value-of select="appears"/>
+            </td>
+            <td>
+                <xsl:value-of select="artist"/>
+            </td>
+            <td>
+                <xsl:value-of select="writers"/>
+            </td>
+            <td>
+                <xsl:value-of select="producer"/>
+            </td>
+            <td>
+                <xsl:value-of select="released"/>
+            </td>
+            <td>
+                <xsl:value-of select="streak"/>
+            </td>
+            <td>
+                <xsl:value-of select="position"/>
+            </td>
+        </tr>
+    </xsl:template>
+    
 </xsl:stylesheet>
