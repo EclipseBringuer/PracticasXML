@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE alumnos [
+<!ELEMENT alumnos (alumno+) >
+<!ELEMENT alumno (nombre,apellido,notas) >
+<!ELEMENT notas (nota+) >
+<!ELEMENT nota (#PCDATA) >
+<!ELEMENT nombre (#PCDATA) >
+<!ELEMENT apellido (#PCDATA) >
+<!ATTLIST alumnos clase CDATA #IMPLIED >
+<!ATTLIST nota modulo CDATA #IMPLIED >
+<!ATTLIST alumno dni CDATA #IMPLIED >
+]>
+
+
+<alumnos clase="1ºDAM">
+    <alumno dni="46156670V">
+        <nombre>Gabriel</nombre>
+        <apellido>Rincón</apellido>
+        <notas>
+            <nota modulo="Marcas">8</nota>
+            <nota modulo="Sistemas">10</nota>
+            <nota modulo="BD">8</nota>
+            <nota modulo="Entornos">8</nota>
+            <nota modulo="FOL">9</nota>
+            <nota modulo="Programacion">8</nota>
+        </notas>
+    </alumno>
+</alumnos>
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html [
+<!ELEMENT html (head,body) >
+<!ELEMENT head (title) >
+<!ELEMENT title (#PCDATA) >
+
+<!ELEMENT body (#PCDATA|h1|h2|h3|h4|p|img|hr|a|ul|ol|br)* >
+<!ELEMENT h1 (#PCDATA|strong|a|br|em)* >
+<!ELEMENT h2 (#PCDATA|strong|a|br|em)* >
+<!ELEMENT h3 (#PCDATA|strong|a|br|em)* >
+<!ELEMENT h4 (#PCDATA|strong|a|br|em)* >
+<!--En los  h no he metido las imagenes porque considero que no es necesario
+que esten dentro de ellos, no veo que sea algo práctico
+ a la hora de crear un html, además he añadido los strong porque aunque su
+efecto visual es lo mismo, a nivel de interpretacion le daria todavia
+mas importancia a los h-->
+<!ELEMENT a (#PCDATA|strong|em|br|img)* >
+<!--he decidido no meter los h dentro del a para forzar a escribir
+los a dentro del p, considero que ese orden tiene más sentido ya que tienes
+una cabecera la cual es un enlace, al revés creo que sería algo peor formado-->
+<!ELEMENT br EMPTY >
+<!ELEMENT hr EMPTY >
+<!ELEMENT img EMPTY >
+<!ELEMENT ul (li)+ >
+<!ELEMENT ol (li)+ >
+<!--Para las listas les he permitido li, por lo que tengo entendido no
+pueden contener otra cosa, al menos no de forma correcta
+aunque te lo permita html normal-->
+<!ELEMENT li (#PCDATA|a|ul|ol|p|br|h1|h2|h3|h4|strong|em)* >
+<!ELEMENT strong (#PCDATA|a|h1|h2|h3|h4|p|em)* >
+<!--He permitido que se pueda poner el strong tanto dentro como
+fuera de los h, creo que a nivel de significado es factible
+ya que ambas etiquetas resaltan que el contenido es importante-->
+<!ELEMENT em (#PCDATA|a|h1|h2|h3|h4|p|strong)* >
+<!ELEMENT p (#PCDATA|a|strong|br|em|img)* >
+<!ATTLIST img src CDATA #REQUIRED >
+<!ATTLIST img width CDATA #IMPLIED > 
+<!ATTLIST img height CDATA #IMPLIED >
+<!ATTLIST a href CDATA #REQUIRED >
+<!ATTLIST img alt CDATA #IMPLIED >
+<!--aqui es mas de lo mismo, los atributos esenciales los he coocado como
+obligatorios, el resto como opcionales--> 
+]>
+
+<html>
+  <head>
+    <title>Mi perfil en línea</title>
+  </head>
+  <body>
+    <h1>Hola, soy un desarrollador</h1>
+    <p>Me gusta trabajar en proyectos interesantes y aprender cosas nuevas todo el tiempo.</p>
+    <h2>Mis habilidades</h2>
+    <ul>
+      <li>Desarrollo de aplicaciones multiplataforma</li>
+      <li>Programación en Java</li>
+      <li>Bases de datos en mysql</li>
+    </ul>
+    <h3>Proyectos recientes</h3>
+    <ol>
+      <li>Aplicación de gestión de tareas</li>
+      <li>Codigo en Java</li>
+      <li>Curso HTML y CSS</li>
+    </ol>
+    <hr />
+    <h4>Contacto</h4>
+    <p>Si quieres saber más sobre mí o mis proyectos, no dudes en <a href="mailto:mihorario@dominio.com">contactarme</a>.</p>
+    <br />
+    <img src="https://example.com/foto.jpg" alt="Mi foto de perfil" width="200" height="200" />
+  </body>
+</html>
+
+

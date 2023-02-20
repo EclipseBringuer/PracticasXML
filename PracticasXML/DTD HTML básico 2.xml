@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html [
+<!ELEMENT html (head,body) >
+<!ELEMENT head (title) >
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT body (#PCDATA|h1|h2|h3|h4|p|img|hr|a|ul|ol|br)* >
+<!ELEMENT h1 (#PCDATA|strong|a|br|em)* >
+<!ELEMENT h2 (#PCDATA|strong|a|br|em)* >
+<!ELEMENT h3 (#PCDATA|strong|a|br|em)* >
+<!ELEMENT h4 (#PCDATA|strong|a|br|em)* >
+<!ELEMENT a (#PCDATA|strong|em|br|img)* >
+<!ELEMENT br EMPTY >
+<!ELEMENT hr EMPTY >
+<!ELEMENT img EMPTY >
+<!ELEMENT ul (li)+ >
+<!ELEMENT ol (li)+ >
+<!ELEMENT li (#PCDATA|a|ul|ol|p|br|h1|h2|h3|h4|strong|em)* >
+<!ELEMENT strong (#PCDATA|a|h1|h2|h3|h4|p|em)* >
+<!ELEMENT em (#PCDATA|a|h1|h2|h3|h4|p|strong)* >
+<!ELEMENT p (#PCDATA|a|strong|br|em|img)* >
+<!ATTLIST img src CDATA #REQUIRED >
+<!ATTLIST img width CDATA #IMPLIED > 
+<!ATTLIST img height CDATA #IMPLIED >
+<!ATTLIST a href CDATA #REQUIRED >
+<!ATTLIST img alt CDATA #IMPLIED >
+]>
+
+<html>
+  <head>
+    <title>Ejemplo de página web</title>
+  </head>
+  <body>
+    <h1>Bienvenido a mi página web</h1>
+    <p>Esta es una página de ejemplo que utiliza <strong>XML</strong> y sigue un DTD de un html sencillo.</p>
+    <h2>Acerca de mi página</h2>
+    <p>Mi página se dedica a <em>compartir información sobre tecnología</em> y aprender nuevas cosas sobre el desarrollo de software.</p>
+    <h3>Mis intereses</h3>
+    <ul>
+      <li>Desarrollo web</li>
+      <li>Programación en general</li>
+      <li>Nuevas tecnologías</li>
+    </ul>
+    <hr />
+    <h4>Contacto</h4>
+    <p>Si desea contactarme, puede enviarme un correo electrónico a <a href="mailto:miemail@dominio.com">miemail@dominio.com</a>.</p>
+    <br />
+    <img src="https://example.com/logo.png" alt="Mi logotipo" width="100" height="100" />
+  </body>
+</html>
+
+
