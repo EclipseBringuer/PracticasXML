@@ -2,27 +2,40 @@
 
 <!DOCTYPE alumnos [
 <!ELEMENT alumnos (alumno+) >
-<!ELEMENT alumno (nombre,apellido,notas) >
+<!ELEMENT alumno (nombre,apellido,dni,notas) >
 <!ELEMENT notas (nota+) >
 <!ELEMENT nota (#PCDATA) >
 <!ELEMENT nombre (#PCDATA) >
 <!ELEMENT apellido (#PCDATA) >
-<!ATTLIST alumnos clase CDATA #IMPLIED >
-<!ATTLIST nota modulo CDATA #IMPLIED >
-<!ATTLIST alumno dni CDATA #IMPLIED >
+<!ELEMENT dni (#PCDATA) >
+<!ATTLIST nota modulo ID #IMPLIED >
 ]>
 
 
-<alumnos clase="1ºDAM">
-    <alumno dni="46156670V">
+<alumnos>
+    <alumno>
         <nombre>Gabriel</nombre>
         <apellido>Rincón</apellido>
+        <dni>46156670V</dni>
         <notas>
             <nota modulo="Marcas">8</nota>
             <nota modulo="Sistemas">10</nota>
             <nota modulo="BD">8</nota>
             <nota modulo="Entornos">8</nota>
             <nota modulo="FOL">9</nota>
+            <nota modulo="Programacion">8</nota>
+        </notas>
+    </alumno>
+    <alumno>
+        <nombre>Raúl</nombre>
+        <apellido>Sánchez</apellido>
+        <dni>45274721B</dni>
+        <notas>
+            <nota modulo="Marcas">7</nota>
+            <nota modulo="Sistemas">10</nota>
+            <nota modulo="BD">9</nota>
+            <nota modulo="Entornos">6</nota>
+            <nota modulo="FOL">10</nota>
             <nota modulo="Programacion">8</nota>
         </notas>
     </alumno>
